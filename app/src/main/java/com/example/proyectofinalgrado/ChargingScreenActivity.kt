@@ -1,5 +1,5 @@
 package com.example.proyectofinalgrado
-
+/*
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,4 +16,4 @@ class ChargingScreenActivity : AppCompatActivity() {
             startActivity(intent)
         }, duracion)
     }
-}
+}*/

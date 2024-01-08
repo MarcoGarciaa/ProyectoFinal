@@ -1,5 +1,5 @@
 package com.example.proyectofinalgrado
-
+/*
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -99,4 +99,4 @@ class SingInActivity : AppCompatActivity() {
                 }
             }
     }
-}
+}*/
