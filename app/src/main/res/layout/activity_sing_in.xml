@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <!--tools:context=".SingInActivity"-->
+    android:layout_height="match_parent"
+    tools:context=".SingInActivity">
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -28,7 +29,7 @@
             android:layout_marginRight="65dp"
             android:text="@string/create_account"
             android:textColor="@color/primaryColor"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <!--EMAIL-->
@@ -41,7 +42,7 @@
             android:layout_marginRight="65dp"
             android:ems="10"
             android:hint="@string/email"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:textColorHint="@color/grey"
             android:importantForAutofill="no"/>
 
@@ -132,9 +133,9 @@
                 android:backgroundTint="@color/primaryColor"
                 android:elevation="2dp"
                 android:shadowColor="#5C5C5C"
-                android:text="<"
+                android:text="V"
                 android:textColor="#FFFFFF"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:cornerRadius="5dp"
                 app:strokeColor="#FFFFFF" />
@@ -153,7 +154,7 @@
                 android:shadowColor="#5C5C5C"
                 android:text="@string/sing_in"
                 android:textColor="#FFFFFF"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:cornerRadius="5dp"
                 app:strokeColor="#FFFFFF" />

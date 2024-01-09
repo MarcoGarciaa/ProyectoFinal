@@ -1,17 +1,17 @@
 package com.example.proyectofinalgrado
-/*
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Patterns
+/*import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-
+import android.content.Intent
+*/
 class SingInActivity : AppCompatActivity() {
 
-    val fA :FirebaseAuth
+    /*val fA :FirebaseAuth
 
     private lateinit var Email: EditText
     private lateinit var Name: EditText
@@ -21,12 +21,12 @@ class SingInActivity : AppCompatActivity() {
     private lateinit var Username: EditText
     private lateinit var btnSingIn: Button
     private lateinit var btnGoBack: Button
-
+*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sing_in)
 
-        Email = findViewById(R.id.editTextEmail)
+        /*Email = findViewById(R.id.editTextEmail)
         Name = findViewById(R.id.editTextName)
         Surname = findViewById(R.id.editTextSurname)
         Password1 = findViewById(R.id.editTextPassword)
@@ -58,9 +58,10 @@ class SingInActivity : AppCompatActivity() {
         btnGoBack.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 
+    /*
     //METODO PARA REGISTRAR USUARIO
     private fun singInUser(correo: String, pass: String) {
         fA.createUserWithEmailAndPassword(correo, pass)
@@ -98,5 +99,5 @@ class SingInActivity : AppCompatActivity() {
                     Toast.makeText(this, "No se registró", Toast.LENGTH_SHORT).show()
                 }
             }
-    }
-}*/
+    }*/
+}
