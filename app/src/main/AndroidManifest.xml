@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoFinalGrado"
         tools:targetApi="31">
         <activity
+            android:name=".singin.SingInManual1Activity"
+            android:exported="false" />
+        <activity
             android:name=".singin.SingInManualActivity"
             android:exported="false" />
         <activity

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ProyectoFinalGrado</string>
 
-    //Login
-    <string name="username_email">Username or email</string>
+    <!--LOGIN-->
+    <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
     <string name="logingoogle">LOGIN WITH GOOGLE</string>
@@ -10,19 +10,33 @@
     <string name="sing_in">SIGN IN</string>
     <string name="forgot_password">Have you forgotten the password?</string>
 
-    //Sing in
-    <string name="create_account">CREATE YOUR ACCOUNT</string>
+    <!--SIGN IN-->
     <string name="name">Name</string>
-    <string name="surname">Surname</string>
-    <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="repeat_password">Repeat Password</string>
-    <string name="back">back</string>
+    <string name="next">NEXT</string>
     <string name="description">By clicking "Sing In", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
     <string name="subtitle">Ready to be part of the car community?</string>
     <string name="sing_in_google">SIGN IN WITH GOOGLE</string>
     <string name="sing_in_facebook">SIGN IN WITH FACEBOOK</string>
     <string name="sing_in_manual">SIGN IN MANUAL</string>
+    <string name="change_preferences">Then you can change your preferences in settings</string>
+
+    <!--SIGN IN 1-->
+    <string name="title1">Create new account:</string>
+    <string name="subtitle1">Select a username for identify your self in the app and add a password for protect your account. </string>
+
+    <!--SIGN IN 2-->
+    <string name="title2">Create new account:</string>
+    <string name="subtitle2">Select a username for identify your self in the app and add a password for protect your account. </string>
+
+    <!--SIGN IN 3-->
+    <string name="title3">Create new account:</string>
+    <string name="subtitle3">Select a username for identify your self in the app and add a password for protect your account. </string>
+
+    <!--SIGN IN 1-->
+    <string name="title4">Create new account:</string>
+    <string name="subtitle4">Select a username for identify your self in the app and add a password for protect your account. </string>
 
 
 </resources>
