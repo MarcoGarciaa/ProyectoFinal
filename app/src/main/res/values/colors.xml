@@ -5,4 +5,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primaryColor">#1B93F3</color>
     <color name="secondaryColor">#2CB831</color>
+    <color name="terciaryColor">#00ED9A</color>
+
 </resources>

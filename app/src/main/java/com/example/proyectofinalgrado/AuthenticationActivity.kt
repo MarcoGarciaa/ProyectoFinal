@@ -6,6 +6,7 @@ import android.content.Intent
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import com.example.proyectofinalgrado.singin.SingInActivity
 
 class AuthenticationActivity : AppCompatActivity() {
 

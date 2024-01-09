@@ -1,6 +1,7 @@
-package com.example.proyectofinalgrado
+package com.example.proyectofinalgrado.singin
 
 
+import com.example.proyectofinalgrado.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 /*import android.util.Patterns
@@ -9,7 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import android.content.Intent
 */
-class SingInActivity : AppCompatActivity() {
+class SingInManualActivity : AppCompatActivity() {
 
     /*val fA :FirebaseAuth
 
@@ -24,7 +25,7 @@ class SingInActivity : AppCompatActivity() {
 */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sing_in)
+        setContentView(R.layout.activity_sing_in_manual)
 
         /*Email = findViewById(R.id.editTextEmail)
         Name = findViewById(R.id.editTextName)

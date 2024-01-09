@@ -20,23 +20,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--LOGO-->
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo_app_blue" />
+
         <!--USERNAME-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="175dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="60dp">
 
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
                 android:drawableStart="@drawable/account_icon"
                 android:drawablePadding="10dp"
-                android:inputType="textEmailAddress"
-                android:importantForAutofill="no"/>
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="60dp"
             app:passwordToggleEnabled="true">
 
@@ -68,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="@color/primaryColor"
             android:elevation="2dp"
@@ -86,17 +95,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="1dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="#FFFFFF"
             android:elevation="2dp"
             android:shadowColor="#FFFFFF"
             android:text="@string/forgot_password"
             android:textColor="@color/primaryColor"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:textStyle="normal"
             app:cornerRadius="5dp"
             app:strokeColor="#FFFFFF" />
+
+        <!--BUTON LOGIN GOOGLE-->
+        <Button
+            android:id="@+id/btnLoginGoogle"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/logingoogle"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:strokeColor="@color/primaryColor" />
+
+        <!--BUTON LOGIN FACEBOOK-->
+        <Button
+            android:id="@+id/btnLoginFacebook"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/loginfacebook"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:strokeColor="@color/primaryColor" />
 
         <!--LINE-->
         <View
@@ -104,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="30dp"
             android:background="#808080" />
 
@@ -115,7 +162,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="105dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="105dp"
             android:backgroundTint="@color/secondaryColor"
             android:elevation="2dp"

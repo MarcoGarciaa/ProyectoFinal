@@ -5,8 +5,11 @@
     <string name="username_email">Username or email</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
-    <string name="sing_in">SING IN</string>
+    <string name="logingoogle">LOGIN WITH GOOGLE</string>
+    <string name="loginfacebook">LOGIN WITH FACEBOOK</string>
+    <string name="sing_in">SIGN IN</string>
     <string name="forgot_password">Have you forgotten the password?</string>
+
     //Sing in
     <string name="create_account">CREATE YOUR ACCOUNT</string>
     <string name="name">Name</string>
@@ -14,6 +17,12 @@
     <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="repeat_password">Repeat Password</string>
+    <string name="back">back</string>
+    <string name="description">By clicking "Sing In", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
+    <string name="subtitle">Ready to be part of the car community?</string>
+    <string name="sing_in_google">SIGN IN WITH GOOGLE</string>
+    <string name="sing_in_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="sing_in_manual">SIGN IN MANUAL</string>
 
 
 </resources>

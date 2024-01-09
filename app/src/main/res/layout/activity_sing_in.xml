@@ -5,161 +5,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SingInActivity">
+    tools:context=".singin.SingInActivity">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
+        android:background="@drawable/background_gradient"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!--TITTLE-->
+        <!--GO BACK BUTTON-->
+        <ImageButton
+            android:id="@+id/imageBtnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0FEA9D"
+            android:src="@drawable/go_back_button_"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!--LOGO-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo_app" />
+
+        <!--SUBTITLE-->
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewSubtitle"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginRight="65dp"
-            android:text="@string/create_account"
-            android:textColor="@color/primaryColor"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:text="@string/subtitle"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <!--EMAIL-->
-        <EditText
-            android:id="@+id/editTextEmail"
+        <!--DESCRIPTION-->
+        <TextView
+            android:id="@+id/textViewDescription"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/grey"
-            android:importantForAutofill="no"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="60dp"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
-        <!--NAME-->
-        <EditText
-            android:id="@+id/editTextName"
+        <!--SIGN IN GOOGLE BUTTON-->
+        <Button
+            android:id="@+id/btnSingInGoogle"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/name"
-            android:inputType="text"
-            android:textColorHint="@color/grey"
-            android:importantForAutofill="no"/>
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/sing_in_google"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/white" />
 
-        <!--SURNAME-->
-        <EditText
-            android:id="@+id/editTextSurname"
+        <!--SIGN IN FACEBOOK BUTTON-->
+        <Button
+            android:id="@+id/btnSingInFacebook"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/surname"
-            android:textColorHint="@color/grey"
-            android:inputType="text"
-            android:importantForAutofill="no"/>
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/sing_in_facebook"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/white" />
 
-        <!--PASSWORD-->
-        <EditText
-            android:id="@+id/editTextPassword"
+        <!--SIGN IN MANUAL BUTTON-->
+        <Button
+            android:id="@+id/btnSingInManual"
+            style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:textColorHint="@color/grey"
-            android:importantForAutofill="no"/>
-
-        <!--REPEAT PASSWORD-->
-        <EditText
-            android:id="@+id/editTextRepeatPassword"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/repeat_password"
-            android:inputType="textPassword"
-            android:textColorHint="@color/grey"
-            android:importantForAutofill="no"/>
-
-        <!--USERNAME-->
-        <EditText
-            android:id="@+id/editTextUsername"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="65dp"
-            android:ems="10"
-            android:hint="@string/username"
-            android:inputType="text"
-            android:textColorHint="@color/grey"
-            android:importantForAutofill="no"/>
-
-        <!--BUTTONS-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <!--GO BACK BUTTON-->
-            <Button
-                android:id="@+id/btnGoBack"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="65dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="35dp"
-                android:backgroundTint="@color/primaryColor"
-                android:elevation="2dp"
-                android:shadowColor="#5C5C5C"
-                android:text="V"
-                android:textColor="#FFFFFF"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                app:cornerRadius="5dp"
-                app:strokeColor="#FFFFFF" />
-
-            <!--SING IN BUTTON-->
-            <Button
-                android:id="@+id/btnSingIn2"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="65dp"
-                android:backgroundTint="@color/primaryColor"
-                android:elevation="2dp"
-                android:shadowColor="#5C5C5C"
-                android:text="@string/sing_in"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:cornerRadius="5dp"
-                app:strokeColor="#FFFFFF" />
-        </LinearLayout>
-
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/sing_in_manual"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/white" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
