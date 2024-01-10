@@ -2,8 +2,8 @@
     <string name="app_name">ProyectoFinalGrado</string>
 
     <!--LOGIN-->
-    <string name="email">Email*</string>
-    <string name="password">Password*</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="login">LOGIN</string>
     <string name="logingoogle">LOGIN WITH GOOGLE</string>
     <string name="loginfacebook">LOGIN WITH FACEBOOK</string>
@@ -11,9 +11,9 @@
     <string name="forgot_password">Have you forgotten the password?</string>
 
     <!--SIGN IN-->
-    <string name="name">Name*</string>
-    <string name="username">Username*</string>
-    <string name="repeat_password">Repeat Password*</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="repeat_password">Repeat Password</string>
     <string name="phone_number">Phone number</string>
     <string name="next">NEXT</string>
     <string name="description">By clicking "Sing In", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
@@ -35,13 +35,18 @@
 
     <!--SIGN IN 3-->
     <string name="step3">Step 3</string>
-    <string name="title3">Create new account:</string>
-    <string name="subtitle3">Select a username for identify your self in the app and add a password for protect your account. </string>
+    <string name="title3">Make other users recognize you:</string>
+    <string name="subtitle3">Choose a photo that represents you and put your name, so that everyone can recognize you. </string>
+    <string name="btncamera">Camera</string>
+    <string name="btngaleria">Galery</string>
 
     <!--SIGN IN 1-->
     <string name="step4">Step 4</string>
-    <string name="title4">Create new account:</string>
-    <string name="subtitle4">Select a username for identify your self in the app and add a password for protect your account. </string>
+    <string name="title4">Last Step!</string>
+    <string name="subtitle4">Do you want to add something to your bibliography? (Optional) </string>
+    <string name="bibliography">Bibliography</string>
+    <string name="skip">Skip step</string>
+    <string name="create">CREATE ACCOUNT</string>
 
 
 </resources>

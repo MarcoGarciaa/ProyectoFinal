@@ -40,14 +40,14 @@
             android:layout_marginRight="60dp">
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/icon_account"
                 android:drawablePadding="10dp"
-                android:hint="@string/email"
+                android:hint="@string/username"
                 android:importantForAutofill="no"
-                android:inputType="textEmailAddress" />
+                android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

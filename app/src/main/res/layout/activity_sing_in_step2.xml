@@ -25,14 +25,13 @@
                 android:background="@drawable/background_gradient_horizontal" />
 
             <!--GO BACK BUTTON-->
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageBtnGoBack"
+                    android:id="@+id/imageBtnGoBack2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
@@ -104,7 +103,7 @@
                 android:layout_marginRight="40dp">
 
                 <EditText
-                    android:id="@+id/editTextPassword"
+                    android:id="@+id/editTextPhoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/icon_phone"
@@ -122,13 +121,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/change_preferences"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="92dp"
+                android:layout_marginTop="105dp"
                 android:layout_marginEnd="60dp"
                 android:textAlignment="center"/>
 
             <!--NEXT BUTTON-->
             <Button
-                android:id="@+id/btnSingInGoogle"
+                android:id="@+id/btnNext2"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"

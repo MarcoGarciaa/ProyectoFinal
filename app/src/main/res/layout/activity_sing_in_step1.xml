@@ -25,14 +25,13 @@
             android:background="@drawable/background_gradient_horizontal" />
 
         <!--GO BACK BUTTON-->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageBtnGoBack"
+                android:id="@+id/imageBtnGoBack1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
@@ -142,13 +141,13 @@
             android:layout_height="wrap_content"
             android:text="@string/change_preferences"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="73dp"
             android:layout_marginEnd="60dp"
             android:textAlignment="center"/>
 
         <!--NEXT BUTTON-->
         <Button
-            android:id="@+id/btnSingInGoogle"
+            android:id="@+id/btnNext1"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="55dp"

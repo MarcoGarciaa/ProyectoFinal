@@ -10,13 +10,14 @@ import com.example.proyectofinalgrado.singin.SingInActivity
 
 class AuthenticationActivity : AppCompatActivity() {
 
-    private lateinit var Email :EditText
+    private lateinit var Username :EditText
     private lateinit var Password :EditText
     private lateinit var btnLogin :Button
     private lateinit var btnForgotPassword :Button
+    private lateinit var btnLoginGoogle :Button
+    private lateinit var btnLoginFacebook :Button
     private lateinit var btnSingIn :Button
 
-    private lateinit var email :String
     private lateinit var username :String
     private lateinit var password :String
 
@@ -25,27 +26,37 @@ class AuthenticationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authentication)
 
-        Email = findViewById(R.id.editTextEmail)
+        Username = findViewById(R.id.editTextUsername)
         Password = findViewById(R.id.editTextPassword)
         btnLogin = findViewById(R.id.btnLogin)
+        btnLoginGoogle = findViewById(R.id.btnLoginGoogle)
+        btnLoginFacebook = findViewById(R.id.btnLoginFacebook)
         btnForgotPassword = findViewById(R.id.btnForgotPassword)
         btnSingIn = findViewById(R.id.btnSingIn)
 
         //ACTION BUTON LOGIN
         btnLogin.setOnClickListener {
 
-            val email = Email.text.toString()
-            val password = Password.text.toString()
+            username = Username.text.toString()
+            password = Password.text.toString()
 
-            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Email.setError("Invalid email")
-                Email.isFocusable = true
-            }else if (Password.length()<8){
-                Password.setError("Minimum 8 characters")
-                Password.isFocusable = true
-            }else{
-                logInUser(email,password)
-            }
+            //CREAR FUNCION LOGIN--------------------------------------------------------------------------------------------------------------
+        }
+
+        //ACTION BUTTON FORGOT PASSWORD
+        btnForgotPassword.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
+        //ACTION BUTTON LOGIN GOOGLE
+        btnLoginGoogle.setOnClickListener {
+            // MARCO AÑADE FUNCION!!-----------------------------------------------------------------------------------------------------------
+        }
+
+        //ACTION BUTTON LOGIN FACEBOOK
+        btnLoginFacebook.setOnClickListener {
+            // MARCO AÑADE FUNCION!!------------------------------------------------------------------------------------------------------------
         }
 
         //ACTION BUTTON SING IN
