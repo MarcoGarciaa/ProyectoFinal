@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.proyectofinalgrado.R
 
-class SingInManual1Activity : AppCompatActivity() {
+class SingInStep1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sing_in_manual1)
+        setContentView(R.layout.activity_sing_in_step1)
     }
 }

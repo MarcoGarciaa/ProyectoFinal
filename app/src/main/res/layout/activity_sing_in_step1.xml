@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".singin.SingInManual1Activity">
+    tools:context=".singin.SingInStep1Activity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="409dp"
@@ -25,13 +25,32 @@
             android:background="@drawable/background_gradient_horizontal" />
 
         <!--GO BACK BUTTON-->
-        <ImageButton
-            android:id="@+id/imageBtnGoBack"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/go_back_button_black"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtnGoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/go_back_button_black"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:text="@string/step1"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/grey"
+                android:textSize="20sp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView3"
@@ -66,7 +85,7 @@
                 android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/account_icon"
+                android:drawableStart="@drawable/icon_account"
                 android:drawablePadding="10dp"
                 android:hint="@string/username"
                 android:importantForAutofill="no"
@@ -87,7 +106,7 @@
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/lock_icon"
+                android:drawableStart="@drawable/icon_lock"
                 android:drawablePadding="10dp"
                 android:hint="@string/password"
                 android:importantForAutofill="no"
@@ -108,7 +127,7 @@
                 android:id="@+id/editTextRepeatPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/lock_icon"
+                android:drawableStart="@drawable/icon_lock"
                 android:drawablePadding="10dp"
                 android:hint="@string/repeat_password"
                 android:importantForAutofill="no"
