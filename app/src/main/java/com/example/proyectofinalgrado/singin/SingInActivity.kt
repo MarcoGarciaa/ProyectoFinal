@@ -31,15 +31,15 @@ class SingInActivity : AppCompatActivity() {
         }
         //SING IN GOOGLE
         btnSingInGoogle.setOnClickListener {
-
+            // MARCO AÑADE FUNCION!!------------------------------------------------------------------------------------------------------------
         }
         //SING IN FACEBOOK
         btnSingInFacebook.setOnClickListener {
-
+            // MARCO AÑADE FUNCION!!------------------------------------------------------------------------------------------------------------
         }
         //SING IN MANUAL
         btnSingInManual.setOnClickListener {
-            val intent = Intent(this, SingInManualActivity::class.java)
+            val intent = Intent(this, SingInStep1Activity::class.java)
             startActivity(intent)
         }
     }
