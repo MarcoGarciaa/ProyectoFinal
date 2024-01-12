@@ -31,9 +31,6 @@
             android:name=".singin.SingInStep1Activity"
             android:exported="false" />
         <activity
-            android:name=".singin.SingInManualActivity"
-            android:exported="false" />
-        <activity
             android:name=".AuthenticationActivity"
             android:exported="true">
             <intent-filter>
