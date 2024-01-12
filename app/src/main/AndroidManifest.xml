@@ -15,6 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalGrado"
         tools:targetApi="31">
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AuthenticationActivity"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
@@ -30,15 +45,7 @@
         <activity
             android:name=".singin.SingInStep1Activity"
             android:exported="false" />
-        <activity
-            android:name=".AuthenticationActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
