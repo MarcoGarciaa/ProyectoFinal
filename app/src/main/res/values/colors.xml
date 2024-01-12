@@ -7,6 +7,7 @@
     <color name="iconColor">@color/primaryColor</color>
     iconColor
     <color name="green">#019A07</color>
+    <color name="warning">#FF0000</color>
     <color name="blue">#1256DD</color>
     <color name="primaryColor">#7733EF</color>
     <color name="secondaryColor">#2AAACA</color>

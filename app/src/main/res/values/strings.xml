@@ -1,28 +1,35 @@
 <resources>
     <string name="app_name">ProyectoFinalGrado</string>
 
-    <!--LOGIN-->
-    <string name="email">Email</string>
+    <!--DATA-->
+    <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number (Optional)</string>
     <string name="login">LOGIN</string>
+
+    <!--LOGIN-->
     <string name="logingoogle">LOGIN WITH GOOGLE</string>
     <string name="loginfacebook">LOGIN WITH FACEBOOK</string>
     <string name="loginuser">LOGIN BY USERNAME</string>
     <string name="sing_in">SIGN IN</string>
     <string name="forgot_password">Have you forgotten the password?</string>
 
+    <!--FORGOT PASSWORD-->
+    <string name="sendPassword">Write your email. We send you a mail with the new password. Then you can change it in settings.</string>
+    <string name="newpassword">We already send you a new password, check you email account. This can take few minutes.</string>
+    <string name="send">SEND</string>
+
     <!--SIGN IN-->
-    <string name="name">Name</string>
-    <string name="username">Username</string>
-    <string name="repeat_password">Repeat Password</string>
-    <string name="phone_number">Phone number</string>
-    <string name="next">NEXT</string>
-    <string name="description">By clicking "Login", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
     <string name="subtitle">Ready to be part of the car community?</string>
+    <string name="description">By clicking "Login", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
     <string name="sing_in_google">SIGN IN WITH GOOGLE</string>
     <string name="sing_in_facebook">SIGN IN WITH FACEBOOK</string>
     <string name="sing_in_manual">SIGN IN 4 STEPS</string>
     <string name="change_preferences">Then you can change your preferences in settings</string>
+    <string name="next">NEXT</string>
 
     <!--SIGN IN 1-->
     <string name="step1">Step 1</string>
@@ -46,7 +53,6 @@
     <string name="title4">Last Step!</string>
     <string name="subtitle4">Do you want to add something to your bibliography? (Optional) </string>
     <string name="bibliography">Bibliography</string>
-    <string name="skip">Skip step</string>
     <string name="create">CREATE ACCOUNT</string>
 
 
