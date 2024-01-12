@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import com.example.proyectofinalgrado.AuthenticationActivity
 import com.example.proyectofinalgrado.R
+import com.example.proyectofinalgrado.User
 
 class SingInStep1Activity : AppCompatActivity() {
 
@@ -36,11 +37,6 @@ class SingInStep1Activity : AppCompatActivity() {
             password=Password.text.toString()
         }
 
-
-
-
-
-
         //GO BACK BUTTON
         btnGoBack.setOnClickListener {
             val intent = Intent(this, SingInActivity::class.java)
@@ -49,7 +45,12 @@ class SingInStep1Activity : AppCompatActivity() {
 
         //NEXT BUTTON
         btnNext.setOnClickListener {
+            val user = User()
+            user.setUsername(username)
+            user.setPassword(password)
+
             val intent = Intent(this, SingInStep2Activity::class.java)
+            intent.putExtra("User",user)
             startActivity(intent)
         }
     }

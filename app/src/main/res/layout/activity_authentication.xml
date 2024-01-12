@@ -99,25 +99,17 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="1dp"
             android:layout_marginEnd="60dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#00FFFFFF"
             android:elevation="2dp"
-            android:shadowColor="#FFFFFF"
+            android:shadowColor="#00FFFFFF"
             android:text="@string/forgot_password"
             android:textColor="@color/primaryColor"
             android:textSize="13sp"
             android:textStyle="normal"
             app:cornerRadius="5dp"
-            app:strokeColor="#FFFFFF" />
+            app:strokeColor="#00FFFFFF" />
 
         <!--LINE-->
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="30dp"
-            android:background="#808080" />
 
         <!--BUTON LOGIN GOOGLE-->
         <Button
@@ -126,17 +118,16 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#00FFFFFF"
             android:elevation="2dp"
             android:shadowColor="#5C5C5C"
             android:text="@string/logingoogle"
             android:textColor="@color/primaryColor"
             android:textSize="16sp"
             app:cornerRadius="5dp"
-            app:strokeColor="@color/grey"
-            />
+            app:strokeColor="@color/grey" />
 
         <!--BUTON LOGIN FACEBOOK-->
         <Button
@@ -147,7 +138,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#00FFFFFF"
             android:elevation="2dp"
             android:shadowColor="#5C5C5C"
             android:text="@string/loginfacebook"
@@ -157,13 +148,22 @@
             app:strokeColor="@color/grey" />
 
         <!--BUTON SING IN-->
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="#808080" />
+
         <Button
             android:id="@+id/btnSingIn"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="@color/secondaryColor"
             android:elevation="2dp"
