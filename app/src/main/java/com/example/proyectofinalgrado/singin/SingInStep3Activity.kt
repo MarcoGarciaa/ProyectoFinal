@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.proyectofinalgrado.LoginActivity
 import com.example.proyectofinalgrado.R
 import com.example.proyectofinalgrado.User
 
@@ -60,7 +61,7 @@ class SingInStep3Activity : AppCompatActivity() {
 
         //GO BACK BUTTON
         btnGoBack.setOnClickListener {
-            val intent = Intent(this, SingInActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             intent.putExtra("User",user)
             startActivity(intent)
         }

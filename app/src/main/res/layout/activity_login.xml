@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".singin.SingInActivity">
+    tools:context=".LoginActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="409dp"
@@ -20,14 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!--GO BACK BUTTON-->
-        <ImageButton
-            android:id="@+id/imageBtnGoBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#0FEA9D"
-            android:src="@drawable/go_back_button_"
-            tools:ignore="SpeakableTextPresentCheck" />
 
         <!--LOGO-->
         <ImageView
@@ -35,7 +27,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/logo_app" />
 
         <!--SUBTITLE-->
@@ -67,7 +59,7 @@
 
         <!--SIGN IN GOOGLE BUTTON-->
         <Button
-            android:id="@+id/btnSingInGoogle"
+            android:id="@+id/btnLoginGoogle"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="55dp"
@@ -77,8 +69,8 @@
             android:backgroundTint="@color/white"
             android:elevation="2dp"
             android:shadowColor="#5C5C5C"
-            android:text="@string/sing_in_google"
-            android:textColor="@color/primaryColor"
+            android:text="@string/logingoogle"
+            android:textColor="@color/darkgrey"
             android:textSize="18sp"
             android:textStyle="normal"
             app:cornerRadius="15dp"
@@ -86,18 +78,37 @@
 
         <!--SIGN IN FACEBOOK BUTTON-->
         <Button
-            android:id="@+id/btnSingInFacebook"
+            android:id="@+id/btnLoginFacebook"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="@color/white"
             android:elevation="2dp"
             android:shadowColor="#5C5C5C"
-            android:text="@string/sing_in_facebook"
-            android:textColor="@color/primaryColor"
+            android:text="@string/loginfacebook"
+            android:textColor="@color/darkgrey"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/white" />
+
+        <!--SIGN IN MANUAL BUTTON-->
+        <Button
+            android:id="@+id/btnLoginManual"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            android:shadowColor="#5C5C5C"
+            android:text="@string/loginuser"
+            android:textColor="@color/darkgrey"
             android:textSize="18sp"
             android:textStyle="normal"
             app:cornerRadius="15dp"
@@ -106,21 +117,21 @@
         <!--SIGN IN MANUAL BUTTON-->
         <Button
             android:id="@+id/btnSingInManual"
-            style="?attr/materialButtonOutlinedStyle"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#00FFFFFF"
             android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/sing_in_manual"
-            android:textColor="@color/primaryColor"
-            android:textSize="18sp"
+            android:text="create new account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             android:textStyle="normal"
             app:cornerRadius="15dp"
-            app:strokeColor="@color/white" />
+            app:strokeColor="#00FFFFFF"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

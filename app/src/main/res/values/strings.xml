@@ -7,6 +7,7 @@
     <string name="login">LOGIN</string>
     <string name="logingoogle">LOGIN WITH GOOGLE</string>
     <string name="loginfacebook">LOGIN WITH FACEBOOK</string>
+    <string name="loginuser">LOGIN BY USERNAME</string>
     <string name="sing_in">SIGN IN</string>
     <string name="forgot_password">Have you forgotten the password?</string>
 
@@ -16,7 +17,7 @@
     <string name="repeat_password">Repeat Password</string>
     <string name="phone_number">Phone number</string>
     <string name="next">NEXT</string>
-    <string name="description">By clicking "Sing In", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
+    <string name="description">By clicking "Login", you agree to our terms and conditions. Find out more about how we process your data in our privacy policy and cookie policy.</string>
     <string name="subtitle">Ready to be part of the car community?</string>
     <string name="sing_in_google">SIGN IN WITH GOOGLE</string>
     <string name="sing_in_facebook">SIGN IN WITH FACEBOOK</string>

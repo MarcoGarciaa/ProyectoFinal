@@ -78,7 +78,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/image_photo" />
+        android:src="@drawable/image_photo"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,19 +90,24 @@
         <ImageButton
             android:id="@+id/btnCamera"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
-            android:src="@drawable/icon_camera" />
+            android:backgroundTint="@color/primaryColor"
+            android:src="@drawable/icon_camera"
+            tools:ignore="SpeakableTextPresentCheck"/>
 
         <!--GALLERY BUTTON-->
         <ImageButton
             android:id="@+id/btnGallery"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="70dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="110dp"
             android:layout_weight="1"
-            android:src="@drawable/icon_gallery" />
+            android:backgroundTint="@color/primaryColor"
+            android:src="@drawable/icon_gallery"
+            tools:ignore="SpeakableTextPresentCheck"/>
     </LinearLayout>
 
     <!--NAME-->

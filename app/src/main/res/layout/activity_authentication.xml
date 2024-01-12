@@ -22,13 +22,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <!--GO BACK BUTTON-->
+        <ImageButton
+            android:id="@+id/imageBtnGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/go_back_button_black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <!--LOGO-->
         <ImageView
             android:id="@+id/imageLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/logo_app_blue" />
 
         <!--USERNAME-->
@@ -36,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="60dp">
 
             <EditText
@@ -72,6 +81,8 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+
+
         <!--BUTON LOGIN-->
         <Button
             android:id="@+id/btnLogin"
@@ -79,7 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="60dp"
             android:backgroundTint="@color/primaryColor"
             android:elevation="2dp"
@@ -103,77 +114,14 @@
             android:elevation="2dp"
             android:shadowColor="#00FFFFFF"
             android:text="@string/forgot_password"
-            android:textColor="@color/primaryColor"
+            android:textColor="@color/blue"
             android:textSize="13sp"
             android:textStyle="normal"
             app:cornerRadius="5dp"
             app:strokeColor="#00FFFFFF" />
 
-        <!--LINE-->
 
-        <!--BUTON LOGIN GOOGLE-->
-        <Button
-            android:id="@+id/btnLoginGoogle"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="#00FFFFFF"
-            android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/logingoogle"
-            android:textColor="@color/primaryColor"
-            android:textSize="16sp"
-            app:cornerRadius="5dp"
-            app:strokeColor="@color/grey" />
 
-        <!--BUTON LOGIN FACEBOOK-->
-        <Button
-            android:id="@+id/btnLoginFacebook"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="#00FFFFFF"
-            android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/loginfacebook"
-            android:textColor="@color/primaryColor"
-            android:textSize="16sp"
-            app:cornerRadius="5dp"
-            app:strokeColor="@color/grey" />
-
-        <!--BUTON SING IN-->
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="30dp"
-            android:background="#808080" />
-
-        <Button
-            android:id="@+id/btnSingIn"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="60dp"
-            android:backgroundTint="@color/secondaryColor"
-            android:elevation="2dp"
-            android:shadowColor="#5C5C5C"
-            android:text="@string/sing_in"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="5dp"
-            app:strokeColor="#FFFFFF" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

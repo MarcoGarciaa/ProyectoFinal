@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.proyectofinalgrado.LoginActivity
 import com.example.proyectofinalgrado.R
 import com.example.proyectofinalgrado.User
 
@@ -39,7 +40,7 @@ class SingInStep2Activity : AppCompatActivity() {
 
         //GO BACK BUTTON
         btnGoBack.setOnClickListener {
-            val intent = Intent(this, SingInActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
